@@ -4,6 +4,10 @@ Tonight you need to use Node.js to make a request to **OMDB**.
 
 - `npm init` a new project.
 - Define an `movie.js` and an `app.js`.
+- Place your API key in a separate `env.js` file.
+  - Export it.
+  - Require it in `movie.js`.
+  - .gitignore it.
 
 #### movie.js
 
