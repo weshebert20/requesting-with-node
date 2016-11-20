@@ -2,7 +2,7 @@
 
 Tonight you need to use Node.js to make a request to **OMDB**.
 
-- `npm init` a new project.
+- Fork and clone this repo.
 - Define `movie.js` and an `app.js`.
 - Place your API key in a separate `env.js` file.
   - Export it.
@@ -15,7 +15,7 @@ Tonight you need to use Node.js to make a request to **OMDB**.
 - This module should *export* a function named `get(movieTitle)`.
 - `get(movieTitle)` should make a *request* to OMDB with the *movieTitle* as an argument.
 - You should console.log your output.
-- You should test this to verify it works!
+- You should test this with `node` to verify it works!
 
 #### app.js
 
