@@ -1,6 +1,6 @@
 ## Homework: Requesting with Node
 
-Tonight you need to use Node.js to make a request to **OMDB**.
+Tonight you need to use Node.js to make a request to [**OMDB**](http://www.omdbapi.com/).
 
 - Fork and clone this repo.
 - `npm install` to install `request`
