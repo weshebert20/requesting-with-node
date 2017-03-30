@@ -17,7 +17,7 @@ Tonight you need to use Node.js to make a request to [**OMDB**](http://www.omdba
 #### app.js
 
 - The **app** should *require* your movie module.
-- You should define your `threeFavouriteMovies` as an array.
+- You should define your `threeFavoriteMovies` as an array.
 - You should then use the `Array.forEach()` function to loop through them.
 - As you loop through them, you should call on your movie module's `get(movieTitle)`
 
@@ -25,8 +25,8 @@ Tonight you need to use Node.js to make a request to [**OMDB**](http://www.omdba
 #### Starter Code: app.js
 ```javascript
 var movie = require("./movie");
-var threeFavouriteMovies = [];
-threeFavouriteMovies.forEach(function(film){
+var threeFavoriteMovies = [];
+threeFavoriteMovies.forEach(function(film){
   // your code here
 })
 ```
