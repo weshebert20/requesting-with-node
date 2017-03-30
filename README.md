@@ -1,3 +1,5 @@
+<!--Do not code this at all, but make sure devs answer how we're going to do each of these steps -->
+
 ## Homework: Requesting with Node
 
 Tonight you need to use Node.js to make a request to [**OMDB**](http://www.omdbapi.com/).
