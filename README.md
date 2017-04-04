@@ -13,6 +13,7 @@ Tonight you need to use Node.js to make a request to [**OMDB**](http://www.omdba
 - The **movie** file will contain a **Module**.
 - This module should *export* a function named `get(movieTitle)`.
 - `get(movieTitle)` should make a *request* to OMDB with the *movieTitle* as an argument.
+	-**Hint:** what do you need to do to use the `request` library?
 - You should console.log your output.
 - You should test this with `node` to verify it works!
 
@@ -25,10 +26,5 @@ Tonight you need to use Node.js to make a request to [**OMDB**](http://www.omdba
 
 
 #### Starter Code: app.js
-```javascript
-var movie = require("./movie");
-var threeFavoriteMovies = [];
-threeFavoriteMovies.forEach(function(film){
-  // your code here
-})
-```
+
+There is some code in `app.js` to get you started, but you will need to write `movie.js` from scratch.
