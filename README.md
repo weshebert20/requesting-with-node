@@ -5,23 +5,30 @@
 Tonight you need to use Node.js to make a request to Google's Custom Search API. You've used Google to search things, right? (Of course you have, you're a Googling Master!) The Google Custom Search API is the same except that we put our search info into the request's url, and the response we get back contains information about the search results.
 
 Steps To Get The Google Custom Search API Working:
-- Sign into Gooogle
-- Go to this link https://console.cloud.google.com/home/dashboard and create a new project called "Requesting With Node"
+1. Sign into Gooogle
+
+2. Go to this link https://console.cloud.google.com/home/dashboard and create a new project called "Requesting With Node"
 <img src="readMeImages/createProject1.PNG">
 <img src="readMeImages/createProject2.PNG">
-- Go to this link to create a "Custom Search Engine" https://cse.google.com/all, click "New Search Engine", enter "whatever.com" into the input, click "create"
-<img src="readMeImages/newSearchEngine.PNG">
-- Copy that search engine's id into sublime (we'll use that later!)
-<img src="readMeImages/searchEngineId.PNG">
-- Scroll down to "Sites to Search", delete the site you added, and change "Search only included sites" to "Search the entire web but emphasize included sites"
-<img src="readMeImages/sitesToSearch.png">
-- Go to this link https://developers.google.com/custom-search/json-api/v1/introduction, click the "Get a Key" button, choose the project you created called "Requesting With Node" and click "Enable API" to get the key. Copy that key!
-<img src="readMeImages/enableAPI.PNG">
-- Open Postman and send a GET request with this format: 
-https://www.googleapis.com/customsearch/v1?key=yourKEY&cx=yourID&q=face+off+movie
-I've minimized some of the JSON objects in the screenshot, but you'll know that your request worked if you see that the "items" array contains a list of search results! If something seems off, ask your neighbor for help!
 
-Here's a resource for understanding how the JSON correlates to what you see on Google. Here's the official documentation https://developers.google.com/custom-search/json-api/v1/reference/cse/list 
+3. Go to this link to create a "Custom Search Engine" https://cse.google.com/all, click "New Search Engine", enter "whatever.com" into the input, click "create"
+<img src="readMeImages/newSearchEngine.PNG">
+
+4. Copy that search engine's id into sublime (we'll use that later!)
+<img src="readMeImages/searchEngineId.PNG">
+
+5. Scroll down to "Sites to Search", delete the site you added, and change "Search only included sites" to "Search the entire web but emphasize included sites"
+<img src="readMeImages/sitesToSearch.PNG">
+
+6. Go to this link https://developers.google.com/custom-search/json-api/v1/introduction, click the "Get a Key" button, choose the project you created called "Requesting With Node" and click "Enable API" to get the key. Copy that key!
+<img src="readMeImages/enableAPI.PNG">
+
+7. Open Postman and send a GET request with this format: 
+https://www.googleapis.com/customsearch/v1?key=yourKEY&cx=yourID&q=face+off+movie
+
+8. I've minimized some of the JSON objects in the screenshot, but you'll know that your request worked if you see that the "items" array contains a list of search results! If something seems off, ask your neighbor for help!
+
+Here's a resource for understanding how the JSON corresponds to what you see on Google in the browser. Here's the official documentation link too: https://developers.google.com/custom-search/json-api/v1/reference/cse/list 
 <img src="readMeImages/comparison.PNG">
 
 Getting Started
@@ -35,7 +42,7 @@ Getting Started
 - This module should *export* a function named `get(movieTitle)`.
 - `get(movieTitle)` should make a *request* to the Google Custom Search API with the *movieTitle* as an argument.
 	- **Hint:** what do you need to do to use the `request` library?
-- You should parse the response and console.log() something from the JSON. (Maybe each search item's snippet field or just the first one?)
+- You should parse the response that you receive and console.log() something from it. (Maybe each search item's snippet field or just the first one? The goal is to console.log() something received from the API for each movie.)
 - You should test this file by running it with `node` to verify that it works!
 
 #### app.js
