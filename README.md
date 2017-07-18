@@ -7,22 +7,22 @@ Tonight you need to use Node.js to make a request to Google's Custom Search API.
 Steps To Get The Google Custom Search API Working:
 - Sign into Gooogle
 - Go to this link https://console.cloud.google.com/home/dashboard and create a new project called "Requesting With Node"
-<img src="createProject1.PNG">
-<img src="createProject2.PNG">
+<img src="readMeImages/createProject1.PNG">
+<img src="readMeImages/createProject2.PNG">
 - Go to this link to create a "Custom Search Engine" https://cse.google.com/all, click "New Search Engine", enter "whatever.com" into the input, click "create"
-<img src="newSearchEngine.PNG">
+<img src="readMeImages/newSearchEngine.PNG">
 - Copy that search engine's id into sublime (we'll use that later!)
-<img src="searchEngineId.PNG">
+<img src="readMeImages/searchEngineId.PNG">
 - Scroll down to "Sites to Search", delete the site you added, and change "Search only included sites" to "Search the entire web but emphasize included sites"
-<img src="sitesToSearch.png">
+<img src="readMeImages/sitesToSearch.png">
 - Go to this link https://developers.google.com/custom-search/json-api/v1/introduction, click the "Get a Key" button, choose the project you created called "Requesting With Node" and click "Enable API" to get the key. Copy that key!
-<img src="enableAPI.PNG">
+<img src="readMeImages/enableAPI.PNG">
 - Open Postman and send a GET request with this format: 
 https://www.googleapis.com/customsearch/v1?key=yourKEY&cx=yourID&q=face+off+movie
 I've minimized some of the JSON objects in the screenshot, but you'll know that your request worked if you see that the "items" array contains a list of search results! If something seems off, ask your neighbor for help!
 
 Here's a resource for understanding how the JSON correlates to what you see on Google. Here's the official documentation https://developers.google.com/custom-search/json-api/v1/reference/cse/list 
-<img src="comparison.PNG">
+<img src="readMeImages/comparison.PNG">
 
 Getting Started
 - Fork and clone this repo.
