@@ -56,3 +56,18 @@ Getting Started
 #### Starter Code: app.js
 
 There is some code in `app.js` to get you started, but you will need to write `movie.js` from scratch.
+
+#### Deliverables
+
+- app.js should require your movie module
+- app.js should contain an array of movie titles
+- for each movie title, app.js should call the get() function provided by the movie module
+- the get() function should send a request to the Google Search API using the passed-in data (each movie title)
+- the get() function's request should receive the response and console.log() <b>at least one property</b> from <b>at least one search result</n> in the items array.
+
+#### Extras
+
+- console.log() only information from search results that are from an imdb.com URL.
+- Brainstorm ways that automated Google Searches could provide useful data for an app, or maybe with your first project.
+- Read the Google Custom Search Documentation link provided above to learn more about the API's capabilities.
+- Modify your get() function to send multiple requests to gather data from consecutive pages of results
