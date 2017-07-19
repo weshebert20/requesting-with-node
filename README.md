@@ -14,7 +14,7 @@ Steps To Get The Google Custom Search API Working:
 3. Go to this link to create a "Custom Search Engine" https://cse.google.com/all, click "New Search Engine", enter "whatever.com" into the input, click "create"
 <img src="readMeImages/newSearchEngine.PNG">
 
-4. Copy that search engine's id into sublime (we'll use that later!)
+4. Go to the control panel and copy that search engine's id into sublime (we'll use that later!)
 <img src="readMeImages/searchEngineId.PNG">
 
 5. Scroll down to "Sites to Search", delete the site you added, and change "Search only included sites" to "Search the entire web but emphasize included sites"
